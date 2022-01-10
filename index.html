@@ -1,0 +1,77 @@
+<!--  -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>document</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    
+    <header>
+        
+        <img class="logo" src="images/Logo.svg" alt="Logo">
+       
+        <div class="link-wrapper">
+            <a class="link" href="#">БАНК</a>
+            <a class="link" href="#">БИЗНЕС</a>
+            <a class="link" href="#">ИНВЕСТИЦИИ</a>
+            <a class="link" href="#">СТРАХОВАНИЕ</a>
+            <a class="link" href="#">МОБАЙЛ</a>
+            <a class="link" href="#">ПУТЕШЕСТВИЯ</a>
+            <a class="link" href="#">РАЗВЛЕЧЕНИЯ</a>
+        </div>
+        
+        <button class="login">ВОЙТИ</button>
+    
+    </header>
+    
+    <main>
+        <h1>Конвертер валют онлайн</h1>
+        
+        <div class="container-exchange">
+           
+            <div class="left-container-exchange">
+                
+                <p class="have">У меня есть</p>
+                
+                <div class="left-exchange-button">
+                    <button class="currency left-button-rub left-active">RUB</button>
+                    <button class="currency left-button-usd">USD</button>
+                    <button class="currency left-button-eur">EUR</button>
+                    <button class="currency left-button-gbp">GBP</button>
+                </div>
+
+                <div class="left-container-summa">
+                    <input class = "summa" type="text" value="1" onkeyup="validate()">
+                    <p class="left-exchange-rate"></p>
+                </div>
+
+            </div>
+            <div class="right-container-exchange">
+                
+                <p class="want">Хочу приобрести</p>
+                
+                <div class="right-exchange-button">
+                    <button class="currency right-button-rub">RUB</button>
+                    <button class="currency right-button-usd right-active">USD</button>
+                    <button class="currency right-button-eur">EUR</button>
+                    <button class="currency right-button-gbp">GBP</button>
+                </div>
+
+                <div class="right-container-summa">
+                    <input class = "summa-exchange" type="text" onkeyup="validate()">
+                    <p class="right-exchange-rate"></p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
